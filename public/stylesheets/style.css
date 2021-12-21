@@ -63,7 +63,12 @@ a.repository {
   margin: 0.5em 0;
 }
 
-.fab,
+.icon {
+  max-width: 75px;
+  margin-right: 1em;
+}
+
+/* .fab,
 .fas,
 .fa-solid,
 .fa-regular {
@@ -91,11 +96,6 @@ a.repository {
   position: absolute;
   bottom: 0;
   left: 10px;
-}
-
-/* .navbar {
-  background-color: rgb(220, 220, 220);
-  width: 100%;
 } */
 
 .nav-link {
