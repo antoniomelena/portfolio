@@ -1,0 +1,24 @@
+extends layout
+
+block content 
+  div(class='container')
+    h1= title 
+    //- div(class='contact')
+    //-   p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    div(class='contact')
+      h2 Contact   
+      a(href="https://www.linkedin.com/in/antonio-melena/" target='_blank') 
+        i(class="fab fa-linkedin")
+      a(href="https://github.com/antoniomelena" target="blank") 
+        i(class="fab fa-github")
+    div(class='contact')
+      h2 Certificates
+      div(class='grid')
+        div(class='grid-item')
+          img(src="images/0001.jpg", alt="certificate", srcset="")
+          //- div(class='overlay overlay-certificate')
+          //-   a(href="https://antoniomelena.github.io/weather-app/" target='_blank') View
+        div(class='grid-item')
+          img(src="images/0002.jpg", alt="certificate", srcset="")
+          //- div(class='overlay overlay-certificate')
+          //-   a(href="https://antoniomelena.github.io/shop/#/" target='_blank') View

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;700&display=swap");
+
+:root {
+  --primary: rgb(50, 120, 210);
+  --secondary: rgb(146, 138, 144);
+  --success: rgb(50, 190, 100);
+  --warning: rgb(254, 192, 45);
+  --danger: rgb(198, 16, 63);
+  --info: rgb(117, 152, 193);
+  --dark: rgb(50, 60, 60);
+  --checkout: rgb(254, 215, 54);
+  --checkout--light: rgb(240, 200, 100);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: calc(1.2rem + 0.2vw) "Sora", sans-serif;
+  /* font-size: ; */
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.repository {
+  color: #ffffffcb;
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+.fab,
+.fas,
+.fa-solid,
+.fa-regular {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.fa-github {
+  color: rgba(20, 20, 20, 0.945);
+}
+
+.fa-linkedin {
+  color: rgb(21, 105, 191);
+}
+
+.fa-brands {
+  color: #ffffffcb;
+}
+
+.fa-brands + .fa-brands {
+  margin-left: 3px;
+}
+
+.project-icons {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+/* .navbar {
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+} */
+
+.nav-link {
+  font-size: 1rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+
+.nav-link:active {
+  color: rgb(11, 77, 171);
+}
+
+.grid {
+  display: grid;
+
+  margin: 2em 0;
+}
+
+.grid-item {
+  border: 2px outset #eee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  position: relative;
+}
+
+.grid-item1 {
+  background: #00b7ff;
+}
+
+.grid-item2 {
+  background: rgb(42, 42, 57);
+}
+
+.grid-item3 {
+  background: rgb(253, 87, 123);
+}
+
+.grid-item4 {
+  background: rgb(135, 187, 122);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay1 {
+  background: #00b7ffa4;
+}
+
+.overlay2 {
+  background: rgba(42, 42, 57, 0.7);
+}
+
+.overlay3 {
+  background: rgba(253, 87, 123, 0.7);
+}
+
+.overlay4 {
+  background: rgba(135, 187, 122, 0.7);
+}
+
+.overlay-certificate {
+  background-color: rgba(100, 100, 100, 0.7);
+}
+
+.contact {
+  margin: 1em 0;
+}
+
+@media (min-width: 750px) {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    width: 125px;
+  }
+
+  .navbar-collapse {
+    display: flex;
+  }
+
+  .nav-item + .nav-item {
+    margin-left: 1em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+}
