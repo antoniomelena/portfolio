@@ -11,7 +11,7 @@ var indexRouter = require("./routes/index");
 var app = express();
 
 app.use(compression());
-app.use(helmet());
+app.use(helmet({ contentSecurityPolicy: false }));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
