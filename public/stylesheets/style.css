@@ -48,6 +48,10 @@ h2 {
   margin: 0 auto;
 }
 
+.logo {
+  max-width: 100px;
+}
+
 a {
   text-decoration: none;
   color: #f8f9fa;
@@ -97,6 +101,21 @@ a.repository {
   bottom: 0;
   left: 10px;
 } */
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.nav-item + .nav-item {
+  margin-left: 1em;
+}
 
 .nav-link {
   font-size: 1rem;
@@ -185,12 +204,9 @@ a.repository {
 }
 
 @media (min-width: 750px) {
-  .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .logo {
+    max-width: 100%;
   }
-
   .navbar-brand {
     width: 125px;
   }
