@@ -35,6 +35,10 @@ img {
   max-width: 50%;
 }
 
+.certificate {
+  max-width: 95%;
+}
+
 h1,
 h2 {
   margin-top: 0;
@@ -144,8 +148,12 @@ a.repository {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4em;
+  padding: 3em;
   position: relative;
+}
+
+.grid-item--lp {
+  padding: 1em;
 }
 
 .grid-item1 {
